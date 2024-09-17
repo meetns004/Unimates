@@ -1,0 +1,30 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Unimates.SettingsPage">
+    <StackLayout Padding="20">
+        <Label Text="Settings" FontSize="Large" FontAttributes="Bold" HorizontalOptions="Center" />
+
+        <!-- Notification Toggle -->
+        <Switch IsToggled="True"/>
+        <Label Text="Enable Notifications" />
+
+        <!-- Privacy Settings -->
+        <Switch IsToggled="True"/>
+        <Label Text="Allow others to view my profile" />
+
+        <!-- App Theme -->
+        <Label Text="Select Theme" FontAttributes="Bold" />
+        <Picker Title="Theme">
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Light</x:String>
+                    <x:String>Dark</x:String>
+                    <x:String>System Default</x:String>
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
+
+        <!-- Log out Button -->
+        <Button Text="Log Out" BackgroundColor="LightGray" TextColor="Black" HeightRequest="50" />
+    </StackLayout>
+</ContentPage>

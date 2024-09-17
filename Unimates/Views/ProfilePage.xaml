@@ -1,0 +1,27 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Unimates.ProfilePage">
+    <StackLayout Padding="20">
+        <Label Text="Profile" FontSize="Large" FontAttributes="Bold" HorizontalOptions="Center" />
+
+        <!-- Profile Picture -->
+        <Image Source="profile_placeholder.png" WidthRequest="100" HeightRequest="100" HorizontalOptions="Center"/>
+        <Button Text="Change Profile Picture" HorizontalOptions="Center"/>
+
+        <!-- Full Name -->
+        <Label Text="Full Name" FontAttributes="Bold"/>
+        <Entry Placeholder="Full Name" />
+
+        <!-- Email -->
+        <Label Text="Email" FontAttributes="Bold"/>
+        <Entry Placeholder="Email" Keyboard="Email" IsEnabled="False"/>
+        <!-- Email should be uneditable -->
+
+        <!-- Bio -->
+        <Label Text="Bio" FontAttributes="Bold"/>
+        <Editor Placeholder="Enter a short bio" HeightRequest="100" />
+
+        <!-- Save Button -->
+        <Button Text="Save Changes" BackgroundColor="LightGray" TextColor="Black" HeightRequest="50" />
+    </StackLayout>
+</ContentPage>

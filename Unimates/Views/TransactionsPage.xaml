@@ -1,0 +1,19 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Unimates.TransactionsPage">
+    <StackLayout Padding="20">
+        <Label Text="Transactions" FontSize="Large" FontAttributes="Bold" HorizontalOptions="Center" />
+        <CollectionView ItemsLayout="VerticalList">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Item Name" FontAttributes="Bold"/>
+                        <Label Text="Sep 9, 2023" />
+                        <Button Text="Complete Payment" />
+                        <Button Text="Leave Review" />
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </StackLayout>
+</ContentPage>

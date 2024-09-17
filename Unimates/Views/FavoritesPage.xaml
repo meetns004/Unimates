@@ -1,0 +1,22 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Unimates.FavoritesPage">
+    <StackLayout Padding="20">
+        <Label Text="Favorites" FontSize="Large" FontAttributes="Bold" HorizontalOptions="Center" />
+
+        <CollectionView ItemsLayout="VerticalList">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout Orientation="Horizontal">
+                        <Image Source="{Binding ItemImage}" WidthRequest="100" HeightRequest="100"/>
+                        <StackLayout>
+                            <Label Text="{Binding ItemName}" FontAttributes="Bold"/>
+                            <Label Text="{Binding ItemPrice}" />
+                        </StackLayout>
+                        <Button Text="Remove" Command="{Binding RemoveFavoriteCommand}"/>
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </StackLayout>
+</ContentPage>

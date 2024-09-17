@@ -1,0 +1,15 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Unimates.ItemDetailsPage">
+    <ScrollView>
+        <StackLayout Padding="20">
+            <Image Source="item_image.png" HeightRequest="200"/>
+            <Label Text="Item Name" FontSize="Large" FontAttributes="Bold"/>
+            <Label Text="Description of the item..." />
+            <Label Text="Price: $999.99" FontAttributes="Bold"/>
+            <Button Text="Buy Now" BackgroundColor="LightGray" TextColor="Black" HeightRequest="50"/>
+            <Editor Placeholder="Message the seller..." HeightRequest="100" />
+            <Button Text="Send" BackgroundColor="LightGray" TextColor="Black" HeightRequest="50"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

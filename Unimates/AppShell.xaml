@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Unimates.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Unimates"
+    Shell.FlyoutBehavior="Disabled"
+    Title="Unimates">
+
+    
+    <ShellContent Title="Profile" ContentTemplate="{DataTemplate local:ProfilePage}" />
+    <ShellContent Title="Favorites" ContentTemplate="{DataTemplate local:FavoritesPage}" />
+    <ShellContent Title="Chat" ContentTemplate="{DataTemplate local:ChatPage}" />
+    <ShellContent Title="Settings" ContentTemplate="{DataTemplate local:SettingsPage}" />
+    <ShellContent Title="Notifications" ContentTemplate="{DataTemplate local:NotificationPage}" />
+</Shell>

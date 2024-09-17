@@ -1,0 +1,23 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Unimates.MainPage">
+    <StackLayout Padding="20">
+        <Label Text="Welcome to Unimates, your go-to app for campus resources and exchanges." 
+               FontSize="Medium" HorizontalOptions="Center"/>
+        <Button Text="Get Started" 
+                BackgroundColor="LightGray" 
+                TextColor="Black" 
+                HeightRequest="50"
+                Clicked="OnGetStartedClicked" />
+        <Label Text="Sign Up" FontAttributes="Bold" HorizontalOptions="Center" FontSize="Large"/>
+
+        <Entry Placeholder="Full Name" />
+        <Entry Placeholder="Email" Keyboard="Email" />
+        <Entry Placeholder="Password" IsPassword="True" />
+
+        <Button Text="Create Account" 
+                BackgroundColor="LightGray" 
+                TextColor="Black" 
+                HeightRequest="50"/>
+    </StackLayout>
+</ContentPage>

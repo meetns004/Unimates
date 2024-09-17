@@ -1,0 +1,32 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Unimates.BrowsePage">
+    <StackLayout Padding="20">
+        <SearchBar Placeholder="Search..." />
+        <Label Text="Browse Categories" FontAttributes="Bold" FontSize="Large" />
+        <CollectionView ItemsLayout="HorizontalGrid, 3">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout>
+                        <Image Source="category_icon.png" HeightRequest="50"/>
+                        <Label Text="Category" HorizontalOptions="Center"/>
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+        <Label Text="Featured Items" FontAttributes="Bold" FontSize="Large" />
+        <CollectionView ItemsLayout="VerticalList">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout Orientation="Horizontal">
+                        <Image Source="featured_item.png" WidthRequest="100" HeightRequest="100"/>
+                        <StackLayout>
+                            <Label Text="Item Name" FontAttributes="Bold"/>
+                            <Label Text="$Price" />
+                        </StackLayout>
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </StackLayout>
+</ContentPage>
